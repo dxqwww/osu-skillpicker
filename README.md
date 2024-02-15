@@ -17,28 +17,24 @@ Here is the list of all available skillsets for beatmaps. While the project is u
 
 **Skillsets list:**
 
-- Aim
-  - Jump Aim
-  - Aim Control
-  - Flow Aim
-  - Precision
-- Tapping
-  - Stream
-  - Finger Control
-  - Stamina
-  - Accuracy
-- Reading
-  - Memory
-  - Low AR
-  - High AR
-  - Tech
-  - Sliders
-- Cross-skillsets (skillsets that cannot belong to specific category because of people's differences of opinion)
-  - Alternate
-  - Farm
-  - Speed
-  - Changing rhythm
-  - Gimmick
+- Jump Aim
+- Aim Control
+- Flow Aim
+- Precision
+- Stream
+- Finger Control
+- Stamina
+- Accuracy
+- Memory
+- Low AR
+- High AR
+- Tech
+- Sliders
+- Alternate
+- Farm
+- Speed
+- Changing rhythm
+- Gimmick
 
 # Installation
 
