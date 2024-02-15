@@ -1,6 +1,6 @@
 # osu!skillpicker (WIP)
 
-Tampermonkey script for [osu!](osu.ppy.sh) which provides the ability to mark, search and view skellsets for all beatmaps.
+Tampermonkey script for [osu!](osu.ppy.sh) which provides the ability to mark, search and view skillsets for all beatmaps.
 
 # Overview
 
