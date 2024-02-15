@@ -28,4 +28,4 @@ Coming soon...
 
 # Acknowledgement
 
-Thanks to [ReeStick](https://github.com/ReeStick) for helping me develop this project and to [this man](https://osu.ppy.sh/users/9269034) for his beatiful [score](https://osu.ppy.sh/scores/1777987420) that inspired this project :)
+Thanks to [ReeStick](https://github.com/ReeStick) for helping me develop this project and to [this man](https://osu.ppy.sh/users/9269034) for his beatiful [score](https://osu.ppy.sh/scores/1777987420) that inspired this project.
