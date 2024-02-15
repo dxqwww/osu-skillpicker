@@ -1,7 +1,6 @@
 // ==UserScript==
 // @name         osu!skillpicker
 
-// unrestrict me please...
 // @namespace    https://osu.ppy.sh/users/9003579
 // @version      1.0.0
 // @description  script for osu! which provides the ability to mark, search and view skellsets for all beatmaps.
@@ -12,13 +11,16 @@
 // @run-at       document-idle
 
 // @noframes
-// @grant    GM_setValue
-// @grant    GM_getValue
-// @grant    GM_listValues
+// @grant        GM.xmlHttpRequest
+// @grant        GM.setValue
+// @grant        GM.getValue
+// @grant        GM_xmlhttpRequest
+// @grant        GM_setValue
+// @grant        GM_getValue
 // ==/UserScript==
 
 /*global $ */
 
 (() => {
-
+    // comming soon...
 });
