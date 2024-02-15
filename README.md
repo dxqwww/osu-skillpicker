@@ -12,7 +12,7 @@ This is an expiremental script that is still under development, in the future, w
 
 ## !THIS LIST IS UNDER DEVELOPMENT AND MAY CHANGE AT ANY TIME!
 
-Here is the list of all available skillsets for beatmaps. While the project is under active development this list may be change. If you have any ideas to improve this list you can leave feedback in this [form]().
+Here is the list of all available skillsets for beatmaps. While the project is under active development this list may be change. If you have any ideas to improve this list you can leave feedback in this [form](https://forms.gle/ZbUEbZ1y3nWSNhhp8).
 
 
 **Skillsets list:**
