@@ -8,23 +8,55 @@ Tampermonkey script for [osu!](osu.ppy.sh) which provides the ability to mark, s
 
 This is an expiremental script that is still under development, in the future, we may use the data for ML. Even if you are not a person who will use the extension often, you can still help the project and cast votes for different beatmaps to help collecting data.
 
+# Skillsets
+
+## !THIS LIST IS UNDER DEVELOPMENT AND MAY CHANGE AT ANY TIME!
+
+Here is the list of all available skillsets for beatmaps. While the project is under active development this list may be change. If you have any ideas to improve this list you can leave feedback in this [form]().
+
+
+**Skillsets list:**
+
+- Aim
+  - Jump Aim
+  - Aim Control
+  - Flow Aim
+  - Precision
+- Tapping
+  - Stream
+  - Finger Control
+  - Stamina
+  - Accuracy
+- Reading
+  - Memory
+  - Low AR
+  - High AR
+  - Tech
+  - Sliders
+- Cross-skillsets (skillsets that cannot belong to specific category because of people's differences of opinion)
+  - Alternate
+  - Farm
+  - Speed
+  - Changing rhythm
+  - Gimmick
+
 # Installation
 
 Coming soon...
 
 # Features:
-- [ ] Beatmap skillset picker (web)
+- [ ] Beatmap skillset picker (*web*)
   - [ ] Skillsets render
   - [ ] Skillsets pick
   - [ ] Show other players picks of each skillset (server-side feature)
   - [ ] Local storage
   - [ ] Server storage
-- [ ] Beatmaps search by skillset (**coming soon**)
-- [ ] Server
-  - [ ] Database
-  - [ ] Beatmap stats API
-    - [ ] /GET skillsets by beatmap id
-    - [ ] /POST skillsets picked by player
+- [ ] ~~Beatmaps search by skillset (web)~~ (*coming soon*)
+- [ ] API (*server-side feature*)
+  - [ ] ~~/GET skillsets of player by osu! user id~~ (*coming soon*)
+  - [ ] ~~/GET search beatmaps by selected skillsets~~ (*coming soon*)
+  - [ ] /GET get skillsets by beatmap id
+  - [ ] /POST send selected skillsets for the beatmap
 
 # Acknowledgement
 
