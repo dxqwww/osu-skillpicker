@@ -20,6 +20,9 @@ Here is the list of all available skillsets for beatmaps. While the project is u
 - Jump Aim
 - Aim Control
 - Flow Aim
+- Anti Aim
+- Snap Aim
+- Linear Aim
 - Precision
 - Stream
 - Finger Control
@@ -31,6 +34,8 @@ Here is the list of all available skillsets for beatmaps. While the project is u
 - Tech
 - Sliders
 - Alternate
+- Reading
+- Consistency
 - Farm
 - Speed
 - Changing rhythm
