@@ -47,18 +47,18 @@ Coming soon...
 
 # Features:
 - [ ] Beatmap skillset picker (*web*)
-  - [ ] Skillsets render
-  - [ ] Skillsets pick
-  - [ ] Show other players picks of each skillset (server-side feature)
+  - [X] ~~Skillsets render~~
+  - [X] ~~Skillsets pick~~
+  - [ ] Show other players picks of each skillset (*server-side feature*)
   - [ ] Local storage
   - [ ] Server storage
-- [ ] ~~Beatmaps search by skillset (web)~~ (*coming soon*)
+- [ ] Beatmaps search by skillset
 - [ ] API (*server-side feature*)
-  - [ ] ~~/GET skillsets of player by osu! user id~~ (*coming soon*)
-  - [ ] ~~/GET search beatmaps by selected skillsets~~ (*coming soon*)
+  - [ ] /GET skillsets of player by osu! user id
+  - [ ] /GET search beatmaps by selected skillsets
   - [ ] /GET get skillsets by beatmap id
   - [ ] /POST send selected skillsets for the beatmap
 
 # Acknowledgement
 
-Thanks to [ReeStick](https://github.com/ReeStick) for helping me develop this project and to [this man](https://osu.ppy.sh/users/9269034) for his beatiful [score](https://osu.ppy.sh/scores/1777987420) that inspired this project.
+Thanks to [ReeStick](https://github.com/ReeStick) for helping me develop this project.

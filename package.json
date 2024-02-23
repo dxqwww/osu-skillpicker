@@ -1,0 +1,55 @@
+{
+  "name": "osu-skillpicker",
+  "version": "1.0.0",
+  "description": "Tampermonkey script for osu! which provides the ability to mark, search and view skillsets for all beatmaps.",
+  "main": "userscript/index.user.js",
+  "scripts": {
+    "build": "webpack --config webpack/prod.ts",
+    "dev": "webpack --config webpack/dev.ts",
+    "build:watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxqwww/osu-skillpicker.git"
+  },
+  "keywords": [],
+  "author": "dxqwww",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dxqwww/osu-skillpicker/issues"
+  },
+  "homepage": "https://github.com/dxqwww/osu-skillpicker#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.5.29",
+    "@types/node": "^18.15.11",
+    "@types/prettier": "^2.7.0",
+    "@types/tampermonkey": "^4.0.5",
+    "@types/webpack": "^5.28.0",
+    "inspectable": "^2.1.0",
+    "prettier": "^2.7.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^5.0.4",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@trim21/gm-fetch": "^0.1.13"
+  },
+  "userscript": {
+    "require-template": "https://cdn.jsdelivr.net/npm/${dependencyName}@${dependencyVersion}",
+    "namespace": "https://osu.ppy.sh/users/9003579",
+    "license": "https://opensource.org/licenses/MIT",
+    "match": [
+      "http://osu.ppy.sh/*",
+      "https://osu.ppy.sh/*"
+    ],
+    "grant": [
+      "GM.xmlHttpRequest",
+      "GM.setValue",
+      "GM.getValue"
+    ]
+  }
+}
