@@ -1,28 +1,81 @@
-import { inspectable } from 'inspectable';
+import { ConfigManager, ModuleManager } from "./common";
+import { ModuleInitializingError } from "./common/errors";
+import { PickerModule, RenderModule } from "./modules";
+import { Constructor } from "./types";
 
-import { Render } from "./render";
-import { PickerOptions } from "./types";
+export interface IPickerConfig {
+    debug: boolean;
+};
+
+export interface IPickerOptions<T> {
+    config: T;
+};
+
+/**
+ * List of all available modules to load
+ */
+const MODULES: Constructor<PickerModule>[] = [
+    RenderModule
+];
 
 export class Picker {
-    private options: PickerOptions;
+    public isStarted = false;
 
-    public render: Render;
+    public modules = new ModuleManager();
+
+    public config: ConfigManager<IPickerConfig>;
+
 
     /**
      * Constructor
      */
-    public constructor(options: Partial<PickerOptions>) {
-        this.options = {
-            pollingRate: 150,
+    public constructor(options: IPickerOptions<IPickerConfig>) {
+        this.config = new ConfigManager({
+            ...options.config || {},
 
-            ...options
-        };
+            debug: true,
+        });
 
-        this.render = new Render({ ...this.options });
+        this.registerModules(MODULES);
     }
 
-    public init(): void {
-        this.render.init();
+    /**
+     * Starts modules
+     */
+    public async start(): Promise<void> {
+        if (!this.isStarted) {
+            for (const module of this.modules) {
+                try {
+                    await module.start();
+                } catch (error) {
+                    if (error instanceof ModuleInitializingError) {
+                        console.error(`<${error.name}>`, error.message);
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Stops modules
+     */
+    public stop(): void {
+        if (this.isStarted) {
+            for (const module of this.modules) {
+                module.stop();
+            }
+        }
+    }
+
+    /**
+     * Registers the modules
+     */
+    private registerModules(modules: Constructor<PickerModule>[]): void {
+        for (const Module of modules) {
+            this.modules.register(Module, {
+                picker: this
+            });
+        }
     }
 
     /**
@@ -30,9 +83,5 @@ export class Picker {
      */
     public get [Symbol.toStringTag](): string {
         return this.constructor.name;
-    }
+    };
 };
-
-inspectable(Picker, {
-    serialize: ({ render }) => ({ render })
-});
