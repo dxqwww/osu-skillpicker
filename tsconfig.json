@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"resolveJsonModule": true,
+		"removeComments": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": true,
+	},
+	"exclude": [
+		"node_modules",
+		"userscripts"
+	]
+}
