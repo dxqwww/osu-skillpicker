@@ -25,7 +25,6 @@
     "@types/prettier": "^2.7.0",
     "@types/tampermonkey": "^4.0.5",
     "@types/webpack": "^5.28.0",
-    "inspectable": "^2.1.0",
     "prettier": "^2.7.1",
     "terser-webpack-plugin": "^5.3.6",
     "ts-loader": "^9.2.6",
