@@ -10,7 +10,7 @@ export default merge(base, {
     },
     output: {
         path: path.resolve(".", "userscripts"),
-        filename: "index.dev.user.js",
+        filename: "skillpicker.dev.user.js",
     },
     devtool: 'eval-source-map',
     watch: true,
