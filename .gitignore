@@ -109,3 +109,6 @@ dist
 
 # Custom files
 /userscripts/*.js
+
+# Include build usercript
+!userscripts/skillpicker.prod.user.js

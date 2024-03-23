@@ -40,6 +40,7 @@
   "userscript": {
     "require-template": "https://cdn.jsdelivr.net/npm/${dependencyName}@${dependencyVersion}",
     "namespace": "https://osu.ppy.sh/users/9003579",
+    "updateURL": "https://raw.githubusercontent.com/dxqwww/osu-skillpicker/master/userscripts/skillpicker.prod.user.js",
     "license": "https://opensource.org/licenses/MIT",
     "match": [
       "http://osu.ppy.sh/*",
